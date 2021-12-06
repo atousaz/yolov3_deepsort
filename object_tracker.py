@@ -17,6 +17,8 @@ from deep_sort.detection import Detection
 from deep_sort.tracker import Tracker
 from tools import generate_detections as gdet
 from PIL import Image
+from keras.layers.normalization import layer_normalization
+
 
 flags.DEFINE_string('classes', './data/labels/coco.names', 'path to classes file')
 flags.DEFINE_string('weights', './weights/yolov3.tf',
